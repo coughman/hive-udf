@@ -54,7 +54,10 @@ public class MonthAdd extends GenericUDF {
 	@Override
 	public Object evaluate(DeferredObject[] arguments) throws HiveException {
 		String dateString = String.valueOf(roir.convertIfNecessary(arguments[0].get(),ois[0]));
-		if (dateString == null || dateString.equals(""))
+		Object incrementArg = arguments[1].get();
+		
+		if (dateString == null || dateString.equals("") ||
+			incrementArg == null || String.valueOf(incrementArg).equals("null"))
 			return null;
 		
 		int increment = Integer.valueOf(String.valueOf(arguments[1].get()));
