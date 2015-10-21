@@ -25,7 +25,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cdh.version>cdh5.4.5</cdh.version>
+		<cdh.version>cdh5.4.7</cdh.version>
 		<hadoop.version>2.6.0-${cdh.version}</hadoop.version>
 		<hive.version>1.1.0-${cdh.version}</hive.version>
 	</properties>
