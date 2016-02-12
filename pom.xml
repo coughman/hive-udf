@@ -25,7 +25,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<cdh.version>cdh5.4.7</cdh.version>
+		<cdh.version>cdh5.5.0</cdh.version>
 		<hadoop.version>2.6.0-${cdh.version}</hadoop.version>
 		<hive.version>1.1.0-${cdh.version}</hive.version>
 	</properties>
@@ -36,7 +36,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.3</version>
+					<version>3.5.1</version>
 					<configuration>
 						<source>1.7</source>
 						<target>1.7</target>
@@ -69,49 +69,50 @@
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-cli</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-common</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-contrib</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-exec</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-metastore</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-serde</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-service</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.hive</groupId>
 			<artifactId>hive-shims</artifactId>
 			<version>${hive.version}</version>
+			<scope>provided</scope>
 		</dependency>
-<!-- 
-		<dependency>
-			<groupId>org.apache.hive</groupId>
-			<artifactId>hive-builtins</artifactId>
-			<version>${hive.version}</version>
-		</dependency> -->
 
 	</dependencies>
 
